@@ -1,0 +1,12 @@
+June 11, 2004 -- 1.9.4:
+    - FileStream for accessing XML files as a stream.
+    - Disco is much better behaved.
+    - Presence database cleans up more nicely on session disconnect
+    - Ability to add/extend XPath functions
+    - More doxygen strings.
+    - Many bugfixes and cleanups.
+
+June 10, 2003 -- 1.9.0 released, primary new features:
+    - XPath support
+    - Disco support
+    - Uses the latest sigc++

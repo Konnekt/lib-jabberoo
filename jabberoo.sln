@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jabberoo", "jabberoo.vcproj", "{218922E4-C07A-48B8-984C-B3F4B7B12B56}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjudo", "libjudo\libjudo.vcproj", "{353236CC-3525-4D50-A4A5-998BA309CC18}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		MinSize = MinSize
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{218922E4-C07A-48B8-984C-B3F4B7B12B56}.Debug.ActiveCfg = Debug|Win32
+		{218922E4-C07A-48B8-984C-B3F4B7B12B56}.Debug.Build.0 = Debug|Win32
+		{218922E4-C07A-48B8-984C-B3F4B7B12B56}.MinSize.ActiveCfg = Release|Win32
+		{218922E4-C07A-48B8-984C-B3F4B7B12B56}.MinSize.Build.0 = Release|Win32
+		{218922E4-C07A-48B8-984C-B3F4B7B12B56}.Release.ActiveCfg = Release|Win32
+		{218922E4-C07A-48B8-984C-B3F4B7B12B56}.Release.Build.0 = Release|Win32
+		{353236CC-3525-4D50-A4A5-998BA309CC18}.Debug.ActiveCfg = Debug|Win32
+		{353236CC-3525-4D50-A4A5-998BA309CC18}.Debug.Build.0 = Debug|Win32
+		{353236CC-3525-4D50-A4A5-998BA309CC18}.MinSize.ActiveCfg = Release|Win32
+		{353236CC-3525-4D50-A4A5-998BA309CC18}.MinSize.Build.0 = Release|Win32
+		{353236CC-3525-4D50-A4A5-998BA309CC18}.Release.ActiveCfg = Release|Win32
+		{353236CC-3525-4D50-A4A5-998BA309CC18}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
