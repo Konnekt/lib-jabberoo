@@ -27,8 +27,8 @@ LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,9,1,8
- PRODUCTVERSION 1,9,0,0
+ FILEVERSION 1,10,1,8
+ PRODUCTVERSION 1,10,0,0
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -44,13 +44,12 @@ BEGIN
         BLOCK "041504b0"
         BEGIN
             VALUE "CompanyName", "Dave Smith; Stamina"
-            VALUE "FileDescription", ""
-            VALUE "FileVersion", "1.9.1.8"
+            VALUE "FileVersion", "1.10.1.8"
             VALUE "InternalName", "JabberOO"
             VALUE "LegalCopyright", "Copyright (C)2004,2005 Dave Smith; Rafa³ Lindemann (Stamina)"
             VALUE "OriginalFilename", "jabberoo.dll"
             VALUE "ProductName", "JabberOO"
-            VALUE "ProductVersion", "1.9"
+            VALUE "ProductVersion", "1.10"
         END
     END
     BLOCK "VarFileInfo"
@@ -58,20 +57,6 @@ BEGIN
         VALUE "Translation", 0x415, 1200
     END
 END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Icon
-//
-
-
-
-// Icon with lowest ID value placed first to ensure application icon
-// remains consistent on all systems.
-#endif    // Polish resources
-/////////////////////////////////////////////////////////////////////////////
-
 
 
 #ifdef APSTUDIO_INVOKED
@@ -99,6 +84,8 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
 
 
 

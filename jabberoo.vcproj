@@ -1,125 +1,188 @@
 <?xml version="1.0" encoding="windows-1250"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="8,00"
 	Name="jabberoo"
 	ProjectGUID="{218922E4-C07A-48B8-984C-B3F4B7B12B56}"
-	Keyword="Win32Proj">
+	Keyword="Win32Proj"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="Debug"
 			IntermediateDirectory="Debug"
 			ConfigurationType="2"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="include;libjudo\src;libjudo\src\expat;..\..\libsigc++\;..\..\libsigc++\sigc++\config"
+				AdditionalIncludeDirectories="include;libjudo\src;libjudo\src\expat;&quot;..\..\libsigc++\&quot;;&quot;..\..\libsigc++\sigc++\config&quot;;..;..\stamina.lib_0.6\depends;..\w32compat"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;JABBEROO_EXPORTS;JUDO_EXPORTS"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				UsePrecompiledHeader="3"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="FALSE"
-				DebugInformationFormat="4"/>
+				Detect64BitPortabilityProblems="false"
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="libjudo_d.lib sigc_d.lib"
-				OutputFile="bin/jabberoo_d.dll"
+				OutputFile="bin/jabberoo_1.10_d.dll"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="bin"
-				GenerateDebugInformation="TRUE"
+				AdditionalLibraryDirectories="bin;..\Lib"
+				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/jabberoo.pdb"
 				SubSystem="2"
-				ImportLibrary="bin\jabberoo_d.lib"
-				TargetMachine="1"/>
+				ImportLibrary="bin\jabberoo_1.10_d.lib"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCWebDeploymentTool"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="Release"
 			IntermediateDirectory="Release"
 			ConfigurationType="2"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				OmitFramePointers="TRUE"
-				AdditionalIncludeDirectories="include;libjudo\src;libjudo\src\expat;..\..\libsigc++\;..\..\libsigc++\sigc++\config"
+				OmitFramePointers="true"
+				AdditionalIncludeDirectories="include;libjudo\src;libjudo\src\expat;&quot;..\..\libsigc++\&quot;;&quot;..\..\libsigc++\sigc++\config&quot;;..;..\stamina.lib_0.6\depends;..\w32compat"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;JABBEROO_EXPORTS;JUDO_EXPORTS"
-				StringPooling="TRUE"
+				StringPooling="true"
 				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="TRUE"
+				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="FALSE"
-				DebugInformationFormat="3"/>
+				Detect64BitPortabilityProblems="false"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="libjudo.lib sigc.lib"
-				OutputFile="bin/jabberoo.dll"
+				OutputFile="bin/jabberoo_1.10.dll"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="bin"
-				GenerateDebugInformation="TRUE"
-				GenerateMapFile="TRUE"
+				AdditionalLibraryDirectories="bin;..\Lib"
+				GenerateDebugInformation="true"
+				GenerateMapFile="true"
 				MapFileName="bin/jabberoo.map"
-				MapExports="TRUE"
-				MapLines="TRUE"
+				MapExports="true"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				ImportLibrary="bin/jabberoo.lib"
-				TargetMachine="1"/>
+				ImportLibrary="bin/jabberoo_1.10.lib"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCWebDeploymentTool"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -127,183 +190,238 @@
 	<Files>
 		<Filter
 			Name="Source Files"
-			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm">
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm"
+			>
 			<File
-				RelativePath="src\jabberoo-browse.cpp">
+				RelativePath="src\jabberoo-browse.cpp"
+				>
 				<FileConfiguration
 					Name="Debug|Win32"
-					ExcludedFromBuild="TRUE">
+					ExcludedFromBuild="true"
+					>
 					<Tool
-						Name="VCCLCompilerTool"/>
+						Name="VCCLCompilerTool"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
-					ExcludedFromBuild="TRUE">
+					ExcludedFromBuild="true"
+					>
 					<Tool
-						Name="VCCLCompilerTool"/>
+						Name="VCCLCompilerTool"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\jabberoo-component-session.cpp">
+				RelativePath="src\jabberoo-component-session.cpp"
+				>
 			</File>
 			<File
-				RelativePath="src\jabberoo-disco.cpp">
+				RelativePath="src\jabberoo-disco.cpp"
+				>
 			</File>
 			<File
-				RelativePath="src\jabberoo-filestream.cc">
+				RelativePath="src\jabberoo-filestream.cc"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
-				</FileConfiguration>
-			</File>
-			<File
-				RelativePath="src\jabberoo-JID.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoo-message.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoo-packet.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoo-presence.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoo-presencedb.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoo-roster.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoo-session.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoo-XCP.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoo.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoox-agent.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoox-filter.cc">
-			</File>
-			<File
-				RelativePath="src\jabberoox-vcard.cc">
-			</File>
-			<File
-				RelativePath="src\jutil.cc">
-			</File>
-			<File
-				RelativePath="src\sha.c">
-				<FileConfiguration
-					Name="Debug|Win32">
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\stdafx.cpp">
+				RelativePath="src\jabberoo-JID.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoo-message.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoo-packet.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoo-presence.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoo-presencedb.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoo-roster.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoo-session.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoo-XCP.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoo.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoox-agent.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoox-filter.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jabberoox-vcard.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\jutil.cc"
+				>
+			</File>
+			<File
+				RelativePath="src\sha.c"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="0"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\stdafx.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
-			Filter="h;hpp;hxx;hm;inl;inc;hh">
+			Filter="h;hpp;hxx;hm;inl;inc;hh"
+			>
 			<File
-				RelativePath="acconfig.h">
+				RelativePath="acconfig.h"
+				>
 			</File>
 			<File
 				RelativePath="include\discoDB.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\jabberoo-component.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\jabberoo.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
-				RelativePath="include\jabberoo_conf.h">
+				RelativePath="include\jabberoo_conf.h"
+				>
 			</File>
 			<File
-				RelativePath="include\jabberoofwd.h">
+				RelativePath="include\jabberoofwd.h"
+				>
 			</File>
 			<File
 				RelativePath="include\jabberoox.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\JID.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\jutil.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\message.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\packet.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\presence.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\presenceDB.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
-				RelativePath="src\resource.h">
+				RelativePath="src\resource.h"
+				>
 			</File>
 			<File
 				RelativePath="include\roster.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
 				RelativePath="include\session.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 			<File
-				RelativePath="include\sha.h">
+				RelativePath="include\sha.h"
+				>
 			</File>
 			<File
-				RelativePath="src\stdafx.h">
+				RelativePath="src\stdafx.h"
+				>
 			</File>
 			<File
-				RelativePath="include\vCard.h">
+				RelativePath="include\vCard.h"
+				>
 			</File>
 			<File
 				RelativePath="include\XCP.hh"
-				FileType="2">
+				FileType="2"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
-			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+			>
 			<File
-				RelativePath="src\resource.rc">
+				RelativePath="src\resource.rc"
+				>
 			</File>
 		</Filter>
 	</Files>
