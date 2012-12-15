@@ -61,7 +61,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="libjudo_d.lib sigc_d.lib"
+				AdditionalDependencies="libjudo_d.lib sigc.lib"
 				OutputFile="bin/jabberoo_1.10_d.dll"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="bin;..\Lib"
@@ -149,6 +149,7 @@
 				OutputFile="bin/jabberoo_1.10.dll"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="bin;..\Lib"
+				GenerateManifest="false"
 				GenerateDebugInformation="true"
 				GenerateMapFile="true"
 				MapFileName="bin/jabberoo.map"
@@ -158,12 +159,14 @@
 				EnableCOMDATFolding="2"
 				ImportLibrary="bin/jabberoo_1.10.lib"
 				TargetMachine="1"
+				AllowIsolation="true"
 			/>
 			<Tool
 				Name="VCALinkTool"
 			/>
 			<Tool
 				Name="VCManifestTool"
+				EmbedManifest="false"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"

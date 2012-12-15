@@ -27,7 +27,7 @@ LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,10,1,8
+ FILEVERSION 1,10,2,0
  PRODUCTVERSION 1,10,0,0
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
@@ -44,7 +44,7 @@ BEGIN
         BLOCK "041504b0"
         BEGIN
             VALUE "CompanyName", "Dave Smith; Stamina"
-            VALUE "FileVersion", "1.10.1.8"
+            VALUE "FileVersion", "1.10.2.0"
             VALUE "InternalName", "JabberOO"
             VALUE "LegalCopyright", "Copyright (C)2004,2005 Dave Smith; Rafa³ Lindemann (Stamina)"
             VALUE "OriginalFilename", "jabberoo.dll"
